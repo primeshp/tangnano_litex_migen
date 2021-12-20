@@ -1,0 +1,14 @@
+This will generate a CSR which you can write to make a whole display a single color
+To test
+
+(1) Build and load the gateware
+        /bin/python3 ./base.py --build --load --csr-csv=csr.csv
+(2) Run below command
+	litex_server --uart --uart-port=/dev/ttyUSB2 --uart-baudrate=1000000
+	
+(3) change to the directory which your cst.csv generated
+(4) run
+	litex_cli --regs
+	This will show a register for lcd_color and find the address assigned (in my case it was 0x0001000)
+(5) To write a color to CSR
+	litex_cli --write 0x00001000 0x001F    

@@ -1,0 +1,4 @@
+This criate a memory map for the horizontal scan. But that will repeat creating color bars. Test Python will create color bars
+
+litex_server --uart --uart-port=/dev/ttyUSB1 --uart-baudrate=1000000
+Then run the test python app
