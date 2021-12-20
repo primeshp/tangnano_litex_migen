@@ -3,7 +3,7 @@
 
 # 1) Build/Load design: ./base.py --csr-csv=csr.csv --build --load
 # 2) litex_server --uart --uart-port=/dev/ttyUSB1 --uart-baudrate=1000000
-# 5) Test UARTBone ex: litex_cli --regs
+# 3) Test UARTBone ex: litex_cli --regs
 
 
 import os
